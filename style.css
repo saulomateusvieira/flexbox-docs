@@ -1,0 +1,97 @@
+/* Reset */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: initial;
+    font-weight: 400;
+    text-align: initial;
+}
+
+.background {
+    background-color: rgb(65, 63, 62);
+    color:rgb(177, 173, 173)
+}
+
+.container {
+height:50px;
+background-color: rgb(152, 158, 152);
+border: 3px solid #5eff00;
+display: flex;
+border-radius: 15px;
+
+}
+
+.container-flex-start {
+    height:50px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    justify-content: flex-start;
+    }
+
+.container-flex-end {
+    height:50px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    justify-content: flex-end;    
+    }
+
+.container-center {
+    height:50px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;    
+    }
+
+.container-space-between {
+    height:50px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;    
+    }
+
+    .container-space-around {
+        height:50px;
+        background-color: rgb(152, 158, 152);
+        border: 3px solid #5eff00;
+        display: flex;
+        border-radius: 15px;
+        justify-content: space-around;    
+        }
+
+.container-space-evenly {
+    height:50px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-evenly;    
+    }
+
+.contido {
+width: 25px;
+height: 25px;
+background-color: rgb(59, 50, 59);
+border: 3px solid #fbff08; 
+border-radius: 5px;
+}
+
+.propriedade {
+
+}
+
+.valor {
+    
+}
+
+.descricao-de-propriedade {
+
+}
