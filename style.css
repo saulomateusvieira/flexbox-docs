@@ -76,6 +76,62 @@ border-radius: 15px;
     justify-content: space-evenly;    
     }
 
+.container-space-evenly {
+    height:50px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-evenly;    
+    }
+
+.container-row {
+    height:50px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row;    
+    }
+
+.container-row-reverse {
+    height:50px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row-reverse;    
+    }
+
+.container-column {
+    height:130px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;    
+    }
+
+.container-column-reverse {
+    height:130px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column-reverse;    
+    }
+
+.container-align-items-stretch {
+    height:130px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    align-items: stretch;    
+    }
+
+
+
 .contido {
 width: 25px;
 height: 25px;
@@ -84,6 +140,44 @@ border: 3px solid #fbff08;
 border-radius: 5px;
 }
 
+.contido-1 {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(56, 55, 56);
+    border: 3px solid #fbff08; 
+    border-radius: 5px;
+    }
+
+    .contido-2 {
+        width: 25px;
+        height: 25px;
+        background-color: rgb(104, 99, 104);
+        border: 3px solid #fbff08; 
+        border-radius: 5px;
+        }
+
+        .contido-3 {
+            width: 25px;
+            height: 25px;
+            background-color: rgb(139, 138, 139);
+            border: 3px solid #fbff08; 
+            border-radius: 5px;
+            }
+
+            .contido-4 {
+                width: 25px;
+                height: 25px;
+                background-color: rgb(173, 171, 173);
+                border: 3px solid #fbff08; 
+                border-radius: 5px;
+                }
+                .contido-5 {
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgb(228, 225, 228);
+                    border: 3px solid #fbff08; 
+                    border-radius: 5px;
+                    }
 .propriedade {
 
 }
