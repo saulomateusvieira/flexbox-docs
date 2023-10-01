@@ -7,20 +7,17 @@
     font-weight: 400;
     text-align: initial;
 }
-
 .background {
     background-color: rgb(65, 63, 62);
     color:rgb(202, 204, 202);
     margin: 30px;
 }
-
 .titulo {
     font-size: xx-large;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     padding: 20px;
 }
-
 .subtitulo {
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
@@ -28,15 +25,6 @@
     padding: 20px 20px 5px 20px;
     text-transform: uppercase;
 }
-
-.subtitulo {
-    font-size: larger;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    padding: 20px 20px 5px 20px;
-    text-transform: uppercase;
-}
-
 .paragrafo-de-titulo {
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
@@ -44,7 +32,6 @@
     padding: 20px;
     
 }
-
 .descricao-propriedade {
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
@@ -52,34 +39,45 @@
     padding: 5px;
     
 }
-
 .container {
     height: 50px;
     background-color: rgb(152, 158, 152);
     border: 3px solid #5eff00;
     display: flex;
     border-radius: 15px;
-
+    align-items: flex-start;
 }
-
-/*Estilizando Justify-Content*/
-
 section {
     display: flex;
     justify-content: space-around;
-
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: flex-start; 
+    
 }
-
 .esquerda {
- width: 350px;
- height: 350px;
-}
-
-.direita {
     width: 350px;
-    height: 350px;
-
+    background-color: rgb(103, 105, 105);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    row-gap: 5px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+   }
+ .direita {
+    width: 350px;
+    padding: 5px;
+    margin: 5px;
+    row-gap: 5px;
+    background-color: rgb(103, 105, 105);
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
 }
+/*Estilizando Justify-Content*/
 
 .container-flex-start {
     height: 50px;
@@ -89,7 +87,6 @@ section {
     border-radius: 15px;
     justify-content: flex-start;
 }
-
 .container-flex-end {
     height: 50px;
     background-color: rgb(152, 158, 152);
@@ -98,7 +95,6 @@ section {
     border-radius: 15px;
     justify-content: flex-end;
 }
-
 .container-center {
     height: 50px;
     background-color: rgb(152, 158, 152);
@@ -107,7 +103,6 @@ section {
     border-radius: 15px;
     justify-content: center;
 }
-
 .container-space-between {
     height: 50px;
     background-color: rgb(152, 158, 152);
@@ -116,7 +111,6 @@ section {
     border-radius: 15px;
     justify-content: space-between;
 }
-
 .container-space-around {
     height: 50px;
     background-color: rgb(152, 158, 152);
@@ -125,16 +119,6 @@ section {
     border-radius: 15px;
     justify-content: space-around;
 }
-
-.container-space-evenly {
-    height: 50px;
-    background-color: rgb(152, 158, 152);
-    border: 3px solid #5eff00;
-    display: flex;
-    border-radius: 15px;
-    justify-content: space-evenly;
-}
-
 .container-space-evenly {
     height: 50px;
     background-color: rgb(152, 158, 152);
@@ -145,7 +129,6 @@ section {
 }
 
 /* Estilização Flex-direction */
-
 .container-row {
     height: 50px;
     background-color: rgb(152, 158, 152);
@@ -154,7 +137,6 @@ section {
     border-radius: 15px;
     flex-direction: row;
 }
-
 .container-row-reverse {
     height: 50px;
     background-color: rgb(152, 158, 152);
@@ -163,7 +145,6 @@ section {
     border-radius: 15px;
     flex-direction: row-reverse;
 }
-
 .container-column {
     height: 130px;
     background-color: rgb(152, 158, 152);
@@ -172,7 +153,6 @@ section {
     border-radius: 15px;
     flex-direction: column;
 }
-
 .container-column-reverse {
     height: 130px;
     background-color: rgb(152, 158, 152);
@@ -180,8 +160,9 @@ section {
     display: flex;
     border-radius: 15px;
     flex-direction: column-reverse;
+    flex-flow:  ;
 }
-
+/* Estilização Align-Items */
 .container-align-items-stretch {
     height: 130px;
     background-color: rgb(152, 158, 152);
@@ -190,8 +171,132 @@ section {
     border-radius: 15px;
     align-items: stretch;
 }
+.container-align-items-center {
+    height: 130px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+}
+.container-align-items-flex-start {
+    height: 160px;
+    
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    align-items: flex-start;
+}
+.container-align-items-flex-end {
+    height: 130px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 15px;
+    align-items: flex-end;
+}
+.container-align-items-baseline {
+    height: 130px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 5px;
+    align-items: baseline;
+}
+/* Estilização Flex-wrap */
 
+.container-flex-wrap-nowrap {
+    height: 130px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: nowrap;
+}
+.container-flex-wrap-wrap {
+    height: 130px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.container-flex-wrap-wrap-reverse {
+    height: 130px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: wrap-reverse;
+}
 
+/* Estilização Align Content */
+.container-align-content-stretch {
+    height: 150px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.container-align-content-center {
+    height: 150px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.container-align-content-flex-start {
+    height: 150px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.container-align-content-flex-end {
+    height: 150px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.container-align-content-space-between {
+    height: 150px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.container-align-content-space-around {
+    height: 150px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.container-align-content-space-evenly {
+    height: 150px;
+    background-color: rgb(152, 158, 152);
+    border: 3px solid #5eff00;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+/* Estilização Contidos */
 .contido {
     width: 25px;
     height: 25px;
@@ -199,7 +304,6 @@ section {
     border: 3px solid #fbff08;
     border-radius: 5px;
 }
-
 .contido-1 {
     width: 25px;
     height: 25px;
@@ -207,7 +311,6 @@ section {
     border: 3px solid #fbff08;
     border-radius: 5px;
 }
-
 .contido-2 {
     width: 25px;
     height: 25px;
@@ -215,7 +318,6 @@ section {
     border: 3px solid #fbff08;
     border-radius: 5px;
 }
-
 .contido-3 {
     width: 25px;
     height: 25px;
@@ -223,7 +325,6 @@ section {
     border: 3px solid #fbff08;
     border-radius: 5px;
 }
-
 .contido-4 {
     width: 25px;
     height: 25px;
@@ -231,7 +332,6 @@ section {
     border: 3px solid #fbff08;
     border-radius: 5px;
 }
-
 .contido-5 {
     width: 25px;
     height: 25px;
@@ -239,9 +339,24 @@ section {
     border: 3px solid #fbff08;
     border-radius: 5px;
 }
-
-.propriedade {}
-
-.valor {}
-
-.descricao-de-propriedade {}
+.contido-a {
+    width: 350px;
+    height: 25px;
+    background-color: rgb(56, 55, 56);
+    border: 3px solid #fbff08;
+    border-radius: 5px;
+}
+.contido-b {
+    width: 350px;
+    height: 25px;
+    background-color: rgb(104, 99, 104);
+    border: 3px solid #fbff08;
+    border-radius: 5px;
+}
+.contido-c {
+    width: 350px;
+    height: 25px;
+    background-color: rgb(139, 138, 139);
+    border: 3px solid #fbff08;
+    border-radius: 5px;
+}
